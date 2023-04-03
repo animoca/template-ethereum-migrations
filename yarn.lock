@@ -5,10 +5,10 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"@animoca/ethereum-contract-helpers@npm:^0.0.2":
-  version: 0.0.2
-  resolution: "@animoca/ethereum-contract-helpers@npm:0.0.2"
-  checksum: 209dda59c9902848733d9e73ac1cf8e99c2c49d5233760297692acd736959019169a8042b948c8a23688e49abc939cc17b28d97a22d7b2cdef6554562f74c5a2
+"@animoca/ethereum-contract-helpers@npm:^0.0.4":
+  version: 0.0.4
+  resolution: "@animoca/ethereum-contract-helpers@npm:0.0.4"
+  checksum: 92e2c5dbec0129899f013d524b49488928cd14a18e78c7738d807ac5ca4f09038a9dd24b89ae949b527973f8cf86e6bf24a34b8c8954a2bb39d8b625ae98b98f
   languageName: node
   linkType: hard
 
@@ -26,24 +26,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@animoca/ethereum-contracts@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "@animoca/ethereum-contracts@npm:1.1.0"
-  checksum: d393d297ebb4d48597b7b5df248a9a6aa275d5d5ae8c51bf7b28ef4cee8205187e51b67445c5f716db96c2984cb3e9a30e5b427157fff4cbe110171b4691f3e9
+"@animoca/ethereum-contracts@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "@animoca/ethereum-contracts@npm:1.1.1"
+  checksum: 17594a1781dede0cbc81f8e8262c3a0bed696f37f624e3ef7ed408f9e844f205d80232e9ec68aeedc98c68c39881e27613ee193bfc43a8d2cfeb08ca48434d8c
   languageName: node
   linkType: hard
 
-"@animoca/ethereum-migrations@npm:^1.0.6":
-  version: 1.0.6
-  resolution: "@animoca/ethereum-migrations@npm:1.0.6"
-  checksum: 76547eac4c0bffe0e3382275a4147ee9884537a2ea21458c6886ea86e34fef0e53de729a833b2ba78e96a8b5629f5ae548f3648a656b0029db4b33334c57f7e4
+"@animoca/ethereum-migrations@npm:^1.0.7":
+  version: 1.0.7
+  resolution: "@animoca/ethereum-migrations@npm:1.0.7"
+  checksum: 17ff6089fb0ec2dd35f5118c312f06b38f0585505b47ece7944f63f1a8c8cf5576b93b7cc235a4035480d8d7bbc9e5c58f7163371705abfc37928795da76c5f8
   languageName: node
   linkType: hard
 
-"@animoca/template-ethereum-contracts-0.0@npm:@animoca/template-ethereum-contracts@0.0.4":
-  version: 0.0.4
-  resolution: "@animoca/template-ethereum-contracts@npm:0.0.4"
-  checksum: 297041a8cfb1408966d42e26568669d34c86a6a4695d22e66f4e0d48f1416ee33ed797e821e06410c3fd0cd95acccecce98ad34d1bfd5701755c5400955cb6e4
+"@animoca/template-ethereum-contracts-0.0@npm:@animoca/template-ethereum-contracts@0.0.5":
+  version: 0.0.5
+  resolution: "@animoca/template-ethereum-contracts@npm:0.0.5"
+  checksum: 0af4e7ca74a510803929b21e8e3da2569c71adbe68474155674e5018850f0306ea662e06aeffbc101f823f5fd9530ffb1251ff79b59e418b99c0c9d1a644dcd6
   languageName: node
   linkType: hard
 
@@ -51,12 +51,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@animocabrands/revv-ethereum-migrations@workspace:."
   dependencies:
-    "@animoca/ethereum-contract-helpers": ^0.0.2
-    "@animoca/ethereum-contracts": ^1.1.0
+    "@animoca/ethereum-contract-helpers": ^0.0.4
+    "@animoca/ethereum-contracts": ^1.1.1
     "@animoca/ethereum-contracts-1.0": "npm:@animoca/ethereum-contracts@1.0.0"
     "@animoca/ethereum-contracts-bridging-0.3": "npm:@animoca/ethereum-contracts-bridging@0.3.0"
-    "@animoca/ethereum-migrations": ^1.0.6
-    "@animoca/template-ethereum-contracts-0.0": "npm:@animoca/template-ethereum-contracts@0.0.4"
+    "@animoca/ethereum-migrations": ^1.0.7
+    "@animoca/template-ethereum-contracts-0.0": "npm:@animoca/template-ethereum-contracts@0.0.5"
     "@nomiclabs/hardhat-ethers": ^2.2.2
     "@nomiclabs/hardhat-etherscan": ^3.1.7
     cli-progress: ^3.12.0
@@ -67,7 +67,7 @@ __metadata:
     eslint-plugin-prettier: ^4.2.1
     ethers: ^5.7.2
     fs-extra: ^11.1.1
-    glob: ^9.3.2
+    glob: ^9.3.4
     hardhat: ^2.13.0
     hardhat-deploy: ^0.11.25
     hardhat-deploy-ethers: ^0.3.0-beta.13
@@ -2759,15 +2759,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:^9.3.2":
-  version: 9.3.2
-  resolution: "glob@npm:9.3.2"
+"glob@npm:^9.3.4":
+  version: 9.3.4
+  resolution: "glob@npm:9.3.4"
   dependencies:
     fs.realpath: ^1.0.0
-    minimatch: ^7.4.1
+    minimatch: ^8.0.2
     minipass: ^4.2.4
     path-scurry: ^1.6.1
-  checksum: f3d188e9f70e24fa729a63ca197bcdb36d838677abec1fb9bbfe4b7620063bf90dc0f8d195203d632abfdfa049fad0edf22f93c60076de67cef20c23bcbfaee8
+  checksum: bcf49eaf475dc4ce8d4e98f896408a9f6507a2cb7d24a207c012cb318b969e04a02bcde2ff2920eadd5055ccae444a007b769e418147a56268fab2cda8694cde
   languageName: node
   linkType: hard
 
@@ -3807,12 +3807,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimatch@npm:^7.4.1":
-  version: 7.4.3
-  resolution: "minimatch@npm:7.4.3"
+"minimatch@npm:^8.0.2":
+  version: 8.0.2
+  resolution: "minimatch@npm:8.0.2"
   dependencies:
     brace-expansion: ^2.0.1
-  checksum: daa954231b6859e3ba0e5fbd2486986d3cae283bb69acb7ed3833c84a293f8d7edb8514360ea62c01426ba791446b2a1e1cc0d718bed15c0212cef35c59a6b95
+  checksum: ceb50867205c716a1d027e6de3bd5976a940cec266acf05ff41c29bff9967290a867b381f6317fcebddfb056f0eedff88484d121e4449c3bb16c552a51b7a745
   languageName: node
   linkType: hard
 
