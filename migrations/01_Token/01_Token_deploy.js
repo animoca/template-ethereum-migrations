@@ -1,11 +1,6 @@
 const {utils} = require('ethers');
 const {skipChainTypesExceptFor} = require('@animoca/ethereum-migrations/src/helpers/common');
-const {getContractAddress} = require('@animoca/ethereum-migrations/src/helpers/templates');
-const Contract_deploy = require('@animoca/ethereum-migrations/src/templates/Contract/deploy');
-
-const name = 'Token';
-const symbol = 'TOK';
-const decimals = 18;
+const ERC20FixedSupply_deploy = require('@animoca/ethereum-migrations/src/templates/token/ERC20/ERC20FixedSupply_deploy');
 
 async function getAllocations(hre) {
   const namedAccounts = await hre.getNamedAccounts();
@@ -27,15 +22,13 @@ async function getAllocations(hre) {
   return allocations;
 }
 
-module.exports = Contract_deploy('Token', {
-  contract: 'Token',
-  args: [
-    {name: 'name', value: name},
-    {name: 'symbol', value: symbol},
-    {name: 'decimals', value: decimals},
-    {name: 'holders', value: async (hre) => (await getAllocations(hre)).map((allocation) => allocation.address)},
-    {name: 'amounts', value: async (hre) => (await getAllocations(hre)).map((allocation) => utils.parseEther(allocation.amount))},
-    {name: 'ForwarderRegistry', value: getContractAddress('ForwarderRegistry@1.0')},
-  ],
-});
+module.exports = ERC20FixedSupply_deploy(
+  'Token',
+  'Token',
+  'TOK',
+  18,
+  async (hre) => (await getAllocations(hre)).map((allocation) => allocation.address),
+  async (hre) => (await getAllocations(hre)).map((allocation) => utils.parseEther(allocation.amount))
+);
+
 module.exports.skip = skipChainTypesExceptFor('ethereum');

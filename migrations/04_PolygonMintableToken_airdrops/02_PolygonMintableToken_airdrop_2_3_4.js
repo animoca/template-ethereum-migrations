@@ -1,7 +1,7 @@
 const {utils} = require('ethers');
 const {multiSkip, skipChainTypesExceptFor, skipNetworksTagged} = require('@animoca/ethereum-migrations/src/helpers/common');
 const {getNamedGroups, getNamedAccount} = require('@animoca/ethereum-migrations/src/helpers/templates');
-const ERC20_sealedAirdrop = require('@animoca/ethereum-migrations/src/templates/token/ERC20/sealedAirdrop');
+const ERC20MintBurn_sealedAirdrop = require('@animoca/ethereum-migrations/src/templates/token/ERC20/ERC20MintBurn_sealedAirdrop');
 
 const airdrops = [
   {
@@ -21,7 +21,7 @@ const airdrops = [
   },
 ];
 
-module.exports = ERC20_sealedAirdrop('PolygonMintableToken', 'PolygonMintableTokenSealedAirdrop', airdrops);
+module.exports = ERC20MintBurn_sealedAirdrop('PolygonMintableToken', 'PolygonMintableTokenSealedAirdrop', airdrops);
 module.exports.skip = multiSkip(skipNetworksTagged('production'), skipChainTypesExceptFor('polygon'));
 module.exports.dependencies = ['PolygonMintableToken_airdrop_1'];
 module.exports.tags = ['PolygonMintableToken_airdrop_2_3_4'];
