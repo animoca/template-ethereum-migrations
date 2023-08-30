@@ -7,10 +7,10 @@
   resolved "https://registry.yarnpkg.com/@aashutoshrathi/word-wrap/-/word-wrap-1.2.6.tgz#bd9154aec9983f77b3a034ecaa015c2e4201f6cf"
   integrity sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==
 
-"@animoca/ethereum-contract-helpers@^0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@animoca/ethereum-contract-helpers/-/ethereum-contract-helpers-0.0.4.tgz#482a2f1dc666d6ef31417bd26201b6e04e14a81d"
-  integrity sha512-0WQ9Q1j2fTdnBxvpsBfdlOBNoqFuNJCc0ieNey5rMVEsKbaM6MSpJ+FhmhRg+FpiXbqdxjw+t27P8MByLAgE9w==
+"@animoca/ethereum-contract-helpers@^0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@animoca/ethereum-contract-helpers/-/ethereum-contract-helpers-0.0.6.tgz#6239ae4c10eba1342a0b6b5ac00b10458c9440ad"
+  integrity sha512-3ewt1F7Wr2VEijf6hPSCK0MiJC7s3JnY/2PsGkvaFoaTG9l14pNHxsE5CH7UijAU4l/8N4lHViaENCzkz3klBA==
 
 "@animoca/ethereum-contracts-1.0@npm:@animoca/ethereum-contracts@1.1.1":
   version "1.1.1"
@@ -32,10 +32,10 @@
   resolved "https://registry.yarnpkg.com/@animoca/ethereum-contracts-bridging/-/ethereum-contracts-bridging-1.0.0-rc.0.tgz#31b793dd5431c28ff4fc43ff6f4bcfeeef4b1e7e"
   integrity sha512-m5WdwL10QfKh3mZ7BG5wKHq+HrNc/5lETPeduU27o6s33JhCj0RQAxj4yFBM/CIfeA1YbPF3DZp5My412QFYkw==
 
-"@animoca/ethereum-contracts@^2.0.0-rc.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@animoca/ethereum-contracts/-/ethereum-contracts-2.0.0.tgz#27eec3f237c8085b23ed3f1585d25fafcd657df4"
-  integrity sha512-ZmErM7cu08gNx08p0sPQKiGAtvjSghhIf730ypEACfB+/eyOS5LAkyS0vZHPjy4w8lmGI8O/ucymxQDaZj6POw==
+"@animoca/ethereum-contracts@^3.0.0-rc.2":
+  version "3.0.0-rc.2"
+  resolved "https://registry.yarnpkg.com/@animoca/ethereum-contracts/-/ethereum-contracts-3.0.0-rc.2.tgz#1b6518d7d4fc323a3d5dcc4b6f896edf8adfd8f3"
+  integrity sha512-aS9FRAtrrN3Rb+lngKbiEsKGmMpSdUol43P9gDfmSY6Cr5QJ6xZy3e7jChUXmXZctctpCRPLmcePhw4BxWnDOA==
 
 "@animoca/ethereum-migrations@^2.0.0-rc.1":
   version "2.0.0"
@@ -3836,6 +3836,7 @@ workerpool@6.2.1:
   integrity sha512-ILEIE97kDZvF9Wb9f6h5aXK4swSlKGUcOEGiIYb2OOu/IrDU9iwj0fD//SsA6E5ibwJxpEvhullJY4Sl4GcpAw==
 
 "wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
+  name wrap-ansi-cjs
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
