@@ -1,6 +1,5 @@
-const {utils} = require('ethers');
+const {ethers} = require('hardhat');
 const {skipNetworksNotTagged} = require('@animoca/ethereum-migrations/src/helpers/common');
-const {getContractAddress} = require('@animoca/ethereum-migrations/src/helpers/templates');
 const ERC20FixedSupply_deploy = require('@animoca/ethereum-migrations/src/templates/token/ERC20/ERC20FixedSupply_deploy');
 
 async function getAllocations(hre) {
@@ -29,7 +28,7 @@ module.exports = ERC20FixedSupply_deploy(
   'pTOK',
   18,
   async (hre) => (await getAllocations(hre)).map((allocation) => allocation.address),
-  async (hre) => (await getAllocations(hre)).map((allocation) => utils.parseEther(allocation.amount))
+  async (hre) => (await getAllocations(hre)).map((allocation) => ethers.parseEther(allocation.amount)),
 );
 
 // Only for local dev, since the mapping behavior is not emulated

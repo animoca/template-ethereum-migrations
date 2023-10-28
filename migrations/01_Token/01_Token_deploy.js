@@ -1,4 +1,4 @@
-const {utils} = require('ethers');
+const {ethers} = require('hardhat');
 const {skipChainTypesExceptFor} = require('@animoca/ethereum-migrations/src/helpers/common');
 const ERC20FixedSupply_deploy = require('@animoca/ethereum-migrations/src/templates/token/ERC20/ERC20FixedSupply_deploy');
 
@@ -28,7 +28,7 @@ module.exports = ERC20FixedSupply_deploy(
   'TOK',
   18,
   async (hre) => (await getAllocations(hre)).map((allocation) => allocation.address),
-  async (hre) => (await getAllocations(hre)).map((allocation) => utils.parseEther(allocation.amount))
+  async (hre) => (await getAllocations(hre)).map((allocation) => ethers.parseEther(allocation.amount)),
 );
 
 module.exports.skip = skipChainTypesExceptFor('ethereum');
