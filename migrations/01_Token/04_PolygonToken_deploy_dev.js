@@ -28,7 +28,7 @@ module.exports = ERC20FixedSupply_deploy(
   'pTOK',
   18,
   async (hre) => (await getAllocations(hre)).map((allocation) => allocation.address),
-  async (hre) => (await getAllocations(hre)).map((allocation) => ethers.parseEther(allocation.amount)),
+  async (hre) => (await getAllocations(hre)).map((allocation) => ethers.parseEther(allocation.amount))
 );
 
 // Only for local dev, since the mapping behavior is not emulated

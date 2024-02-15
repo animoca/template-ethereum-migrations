@@ -28,7 +28,7 @@ module.exports = ERC20FixedSupply_deploy(
   'TOK',
   18,
   async (hre) => (await getAllocations(hre)).map((allocation) => allocation.address),
-  async (hre) => (await getAllocations(hre)).map((allocation) => ethers.parseEther(allocation.amount)),
+  async (hre) => (await getAllocations(hre)).map((allocation) => ethers.parseEther(allocation.amount))
 );
 
 module.exports.skip = skipChainTypesExceptFor('ethereum');

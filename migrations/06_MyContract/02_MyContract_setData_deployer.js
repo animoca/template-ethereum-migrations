@@ -29,6 +29,6 @@ module.exports.skip = multiSkip(
     }
 
     return false;
-  },
+  }
 );
 module.exports.dependencies = ['MyContract_deploy'];
