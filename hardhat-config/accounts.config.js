@@ -4,6 +4,10 @@ module.exports = {
       default: 0,
     },
 
+    owner: {
+      default: 1,
+    },
+
     // QA team
     QA1: {
       default: '0xdeaddeaddeaddeaddeaddeaddeaddeaddeaddead',
@@ -28,7 +32,12 @@ module.exports = {
 
     // NFT
     NFT_royaltyReceiver: {
-      default: 0,
+      default: 2,
+    },
+
+    // NFT
+    MultiToken_royaltyReceiver: {
+      default: 2,
     },
   },
 

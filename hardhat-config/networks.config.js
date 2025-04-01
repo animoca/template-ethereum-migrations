@@ -4,16 +4,16 @@ module.exports = {
     mainnet: {
       defaultProvider: 'alchemy',
     },
-    goerli: {
-      defaultProvider: 'infura',
+    sepolia: {
+      defaultProvider: 'alchemy',
     },
 
     // Polygon
     matic: {
       defaultProvider: 'alchemy',
     },
-    mumbai: {
-      defaultProvider: 'infura',
+    amoy: {
+      defaultProvider: 'alchemy',
     },
 
     // BSC
@@ -28,8 +28,23 @@ module.exports = {
     okex: {
       defaultProvider: 'exchain',
     },
-    okextest: {
-      defaultProvider: 'exchain',
+    // okextest: {
+    //   defaultProvider: 'exchain',
+    // },
+
+    arb1: {
+      defaultProvider: 'alchemy',
+    },
+    arbsepolia: {
+      defaultProvider: 'infura',
+    },
+
+    // Base
+    base: {
+      defaultProvider: 'alchemy',
+    },
+    basesepolia: {
+      defaultProvider: 'alchemy',
     },
   },
 };

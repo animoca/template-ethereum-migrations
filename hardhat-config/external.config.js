@@ -2,18 +2,11 @@ module.exports = {
   external: {
     contracts: [
       {
-        artifacts: [
-          'node_modules/@animoca/ethereum-contracts-1.0/artifacts',
-          'node_modules/@animoca/ethereum-contracts-2.0/artifacts',
-          'node_modules/@animoca/ethereum-contracts-3.0/artifacts',
-          'node_modules/@animoca/ethereum-contracts-bridging-0.3/artifacts',
-          'node_modules/@animoca/ethereum-contracts-bridging-1.0/artifacts',
-          'node_modules/@animoca/ethereum-migrations/imports',
-        ],
+        artifacts: ['node_modules/@animoca/ethereum-contracts-4.1/artifacts', 'node_modules/@animoca/ethereum-contracts-bridging-2.0/artifacts'],
         deploy: 'node_modules/@animoca/ethereum-migrations/migrations',
       },
       {
-        artifacts: ['node_modules/@animoca/template-ethereum-contracts-0.0/artifacts'],
+        artifacts: ['node_modules/@animoca/template-ethereum-contracts-1.0/artifacts'],
       },
     ],
     deployments: {
